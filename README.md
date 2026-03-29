@@ -46,6 +46,24 @@ npz_llm_model/
 
 建议使用你已有环境（如 `vip` conda 环境）。
 
+### 3.1 使用 environment.yml（推荐）
+
+仓库已提供 `environment.yml`，环境名固定为 `vip`。
+
+首次创建环境：
+
+```bash
+conda env create -f environment.yml
+conda activate vip
+```
+
+后续同步依赖更新：
+
+```bash
+conda env update -f environment.yml --prune
+conda activate vip
+```
+
 ## 4. 数据与模型路径说明
 
 当前 `configs/config.py` 里的路径是按你原工程根目录写的：
